@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PC-Masters</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="sidebar">
+        <h2>PC-Masters</h2>
+        <img src="images/logo de IA.webp" alt="Logo PC-Masters" class="logo">
+        <button id="all">Todos</button>
+        <button id="processors">Procesadores</button>
+        <button id="graphics">Tarjetas Gráficas</button>
+        <button id="storage">Almacenamiento</button>
+        <button id="ram">Memoria RAM</button>
+        <button id="motherboards">Placas Base</button>
+    </div>
+    
+    <div class="main-content">
+        <div class="header">
+            <input type="text" id="searchInput" placeholder="Buscar componentes...">
+            <button id="searchButton">Buscar</button>
+        </div>
+        <div id="components" class="component-grid"></div>
+    </div>
+
+    <div class="chatbot">
+        <h3>Chatbot</h3>
+        <div id="chatResponse">
+            <!-- Mensajes del chatbot -->
+        </div>
+        <div class="chat-options">
+            <button id="instructionButton">Instrucción</button>
+            <button id="supportButton">Soporte</button>
+        </div>
+        <textarea id="chatInput" placeholder="Escribe un mensaje..."></textarea>
+        <button id="chatButton">Enviar</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
